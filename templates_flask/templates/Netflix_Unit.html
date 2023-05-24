@@ -3,31 +3,36 @@
 
 <head>
     <title>Original Netflix</title>
-    <link rel="stylesheet" href="../static/css/Style.css"/>
-    
+    <link rel="stylesheet" href="../static/css/Style.css" />
+
 </head>
 
 <body>
-    <h1 align = "center" >Netflix Best Of</h1>
-    {% for item in units%}
-    <p>{{item[1]}}</p>
+    <h1 align="center">Netflix Best Of</h1>
+    <div class="container">
 
-    <img src="../static/img/{{item[6]}}" alt="{{item[6]}}" width="200">
+        {% for item in units%}
 
-    <!--
+        <div class="movie">
+            <p>{{item[1]}}</p>
+            <img src="../static/img/{{item[6]}}" alt="{{item[6]}}" width="200">
+        </div>
+
+  <!--
     <p>{{item[2]}}</p>
     <p>{{item[3]}}</p>
     <p>{{item[4]}}</p>
     <p>{{item[5]}}</p>
     -->
 
-    {% endfor %}
-  
+        {% endfor %}
+    </div>
 
-    
-    
 
-    
+
+
+
+
 
 </body>
 
