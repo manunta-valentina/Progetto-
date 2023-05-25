@@ -25,7 +25,7 @@ p {
 .movie
 {
     margin: 2px;
-    border-color: white;
+    border-color: rgb(255, 0, 0);
     border-style: solid;
     width: 200px;
 }
