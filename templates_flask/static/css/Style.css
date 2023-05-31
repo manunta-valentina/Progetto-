@@ -11,7 +11,7 @@ body {
 }
 
 p {
-    color: rgb(255, 255, 255);
+    color: rgb(250, 3, 3);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
 }
@@ -28,4 +28,8 @@ p {
     border-color: rgb(255, 0, 0);
     border-style: solid;
     width: 200px;
+}
+
+.title {
+    
 }

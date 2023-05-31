@@ -22,9 +22,9 @@ def unitList():
     return render_template('Netflix_Unit.html', units=myresult)
 
 
-@app.route('/details/<name>')
-def movieDetail(name):
-    mycursor.execute("SELECT * FROM Netflix_Unit where Title = '{}'".format(name))
+@app.route('/details/<id>')
+def movieDetail(id):
+    mycursor.execute("SELECT * FROM Netflix_Unit where ID = '{}'".format(id))
     myresult = mycursor.fetchall()
     return render_template('Netflix_Details.html', details=myresult)
 

@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Details</title>
+
+        <link rel="stylesheet" href="../static/css/Style.css" />
+        
+    
+        {% for item in details%}
+
+            <div class="title">
+            <title align="center">{{item[1]}}</title>
+            <a href="/details/{{item[1]}}">
+            </a>
+
+        </div>
+
+        {% endfor %}
+        
     </head>
 
     <body>
+
+    
+        {% for item in details%}
+
+            <div class="title">
+            <p >{{item[1]}}</p>
+            <a href="/details/{{item[1]}}">
+            </a>
+
+
+        </div>
+
+
+    <a href="/details/{{item[1]}}">
+        <img src="../static/img/{{item[6]}}" alt="{{item[1]}}" width="200">
+    </a>
+
+    <p>{{item[2]}}</p>
+    <p>{{item[3]}}</p>
+    <p>{{item[4]}}</p>
+    <p>{{item[5]}}</p>
+    
+
+        {% endfor %}
         
-        <h1 align="center">Details</h1>
-        
+      
+       
     </body>
 </html>
